@@ -13,6 +13,8 @@
 		095EEC421F5D56870067E19A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095EEC401F5D56870067E19A /* Main.storyboard */; };
 		095EEC441F5D56870067E19A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 095EEC431F5D56870067E19A /* Assets.xcassets */; };
 		095EEC471F5D56870067E19A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095EEC451F5D56870067E19A /* LaunchScreen.storyboard */; };
+		095EEC501F5D57CC0067E19A /* DownLoadFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 095EEC4F1F5D57CC0067E19A /* DownLoadFile.m */; };
+		095EEC541F5D57D40067E19A /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 095EEC531F5D57D40067E19A /* NSString+Hash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		095EEC431F5D56870067E19A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		095EEC461F5D56870067E19A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		095EEC481F5D56870067E19A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		095EEC4E1F5D57CC0067E19A /* DownLoadFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadFile.h; sourceTree = "<group>"; };
+		095EEC4F1F5D57CC0067E19A /* DownLoadFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadFile.m; sourceTree = "<group>"; };
+		095EEC521F5D57D40067E19A /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		095EEC531F5D57D40067E19A /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 		095EEC361F5D56870067E19A /* FileDownload */ = {
 			isa = PBXGroup;
 			children = (
+				095EEC511F5D57D40067E19A /* MD5 */,
+				095EEC4E1F5D57CC0067E19A /* DownLoadFile.h */,
+				095EEC4F1F5D57CC0067E19A /* DownLoadFile.m */,
 				095EEC3A1F5D56870067E19A /* AppDelegate.h */,
 				095EEC3B1F5D56870067E19A /* AppDelegate.m */,
 				095EEC3D1F5D56870067E19A /* ViewController.h */,
@@ -77,6 +86,15 @@
 				095EEC381F5D56870067E19A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		095EEC511F5D57D40067E19A /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				095EEC521F5D57D40067E19A /* NSString+Hash.h */,
+				095EEC531F5D57D40067E19A /* NSString+Hash.m */,
+			);
+			path = MD5;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				095EEC3F1F5D56870067E19A /* ViewController.m in Sources */,
+				095EEC501F5D57CC0067E19A /* DownLoadFile.m in Sources */,
 				095EEC3C1F5D56870067E19A /* AppDelegate.m in Sources */,
+				095EEC541F5D57D40067E19A /* NSString+Hash.m in Sources */,
 				095EEC391F5D56870067E19A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
